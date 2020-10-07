@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import * as FaIcons from "react-icons/fa";
 
 class Landing extends Component {
   logOut(e) {
@@ -27,6 +28,11 @@ class Landing extends Component {
     const userLink = (
       <ul className="navbar-nav">
         <li className="nav-item">
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars />
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link to="/profile" className="nav-link">
             User
           </Link>
@@ -42,7 +48,7 @@ class Landing extends Component {
     return (
 
 
-         <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
         <button
           className="navbar-toggler"
           type="button"
@@ -68,7 +74,7 @@ class Landing extends Component {
           </ul>
           {localStorage.usertoken ? userLink : loginRegLink}
         </div>
-      </nav> 
+      </nav>
     );
   };
 }
