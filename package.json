@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JAY-Kittisak/mern-mysql-loginreg.git"
+    "url": "git+https://github.com/JAY-Kittisak/JSR-Job-Request.git"
   },
   "author": "",
   "license": "ISC",
@@ -26,7 +26,7 @@
     "sequelize": "^4.38.0"
   },
   "bugs": {
-    "url": "https://github.com/JAY-Kittisak/mern-mysql-loginreg/issues"
+    "url": "https://github.com/JAY-Kittisak/JSR-Job-Request/issues"
   },
-  "homepage": "https://github.com/JAY-Kittisak/mern-mysql-loginreg#readme"
+  "homepage": "https://github.com/JAY-Kittisak/JSR-Job-Request#readme"
 }

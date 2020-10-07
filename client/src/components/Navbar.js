@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { Link, withRouter } from 'react-router-dom'
-import * as FaIcons from "react-icons/fa";
+import * as FaIcons from "react-icons/fa"
+import * as AiIcons from "react-icons/ai";
 
 class Landing extends Component {
   logOut(e) {
@@ -24,14 +25,13 @@ class Landing extends Component {
         </li>
       </ul>
     )
-
+    
     const userLink = (
+
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars />
-          </Link>
-        </li>
+        <Link to='#' className='menu-bars'>
+          <FaIcons.FaBars />
+        </Link>
         <li className="nav-item">
           <Link to="/profile" className="nav-link">
             User
